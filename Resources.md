@@ -54,3 +54,4 @@ This document contains free, high-quality resources aligned with your **Intervie
 - **Editor**: VS Code
 - **API Testing**: Postman (or use the built-in Swagger UI in FastAPI)
 - **Database**: SQLite (built-in to Python) for starters.
+Edited in remote
