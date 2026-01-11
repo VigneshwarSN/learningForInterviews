@@ -120,3 +120,20 @@ When you try to push changes later, Windows will pop up a window asking you to "
 3.  `git add .`
 4.  `git commit -m "Updated readme"`
 5.  `git push` -> Sends your "sealed box" to the cloud!
+
+### Scenario E: Keeping your code up-to-date
+*You run `git status` and see: "Your branch is behind 'origin/main' by 1 commit".*
+
+This means someone else (or you from another computer) pushed work to GitHub, and your local laptop doesn't have it yet.
+
+**Should I use `git merge` or `git pull`?**
+*   **The short answer**: Use **`git pull`**.
+*   **Why?**: `git pull` is actually two commands in one:
+    1.  `git fetch` (Goes to GitHub and sees what's new).
+    2.  `git merge` (Actually brings those changes into your files).
+
+**The Command**:
+```bash
+git pull origin main
+```
+*(This "pulls" the latest from the 'main' branch on GitHub into your local folder).*
